@@ -1,8 +1,35 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: dimgrey;
-    color: beige;
+/* main colors "#cb1d11", "#d4af37", "#141414", "#1c3738", "#c0c0c0" */
+body {
+    font-family: monospace;
+    font-size: 12pt;
+    background-color: #141414;
+    color: #c0c0c0;
+    text-rendering: optimizeLegibility;
 }
+
+
+h1 {
+    font-size: 72pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24pt;
+    padding-left: 12pt;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*NAVIGATION BAR*/
