@@ -28,8 +28,45 @@ a {
     color: #c0c0c0;
 }
 
-ul{
-    list-style-type: none;
+
+#fFold {
+    height: 86vh;
 }
 
 /*NAVIGATION BAR*/
+
+.fNav{
+    position: sticky;
+    top: 0;
+}
+.fNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.fNav ul li {
+    list-style-type: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 120px;
+    background-color: #1c3738;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.fNav ul li:hover {
+    background-color: #cb1d11;
+}
+
+@media (max-width:768px) {
+    .fNav ul {
+        flex-wrap: wrap;
+    }
+}
+
+
+.fBlogroll {
+    background-color: ;
+    flex: auto;
+}
