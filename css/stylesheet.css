@@ -35,14 +35,15 @@ a {
 
 /*NAVIGATION BAR*/
 
-.fNav{
+.fNav {
     position: sticky;
     top: 0;
 }
+
 .fNav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;   
+    justify-content: center;
 }
 
 .fNav ul li {
@@ -65,8 +66,55 @@ a {
     }
 }
 
+.fServices{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.fServ{
+    width: 256px;
+    background-color: rgba(255, 0, 0, .3);
+    text-align: center;
+}
+
+.fProjects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .fBlogroll {
-    background-color: ;
-    flex: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1c3738;
+}
+
+.fBlogpost{
+    background-color: #c0c0c0;
+    height: 256px;
+    width: 192px;
+    margin: 10px;
+}
+
+.fSNS {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fFooternav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fDisclaimer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
