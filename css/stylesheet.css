@@ -2,7 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
-/* main colors "#cb1d11", "#d4af37", "#141414", "#1c3738", "#c0c0c0" */
+/* main colors
+
+"#cb1d11" or "rgb(203, 29, 17)"
+"#d4af37" or "rgb(212, 175, 55)"
+"#141414" or "rgb(20, 20, 20)"
+"#1c3738" or "rgb(28, 55, 56)"
+"#c0c0c0" or "rgb(192, 192, 192)"
+
+*/
+
 body {
     font-family: monospace;
     font-size: 12pt;
@@ -28,12 +37,13 @@ a {
     color: #c0c0c0;
 }
 
+/* FOLD SECTION */
 
 #fFold {
-    height: 86vh;
+    height: 97vh;
 }
 
-/*NAVIGATION BAR*/
+/* NAVIGATION BAR */
 
 .fNav {
     position: sticky;
@@ -66,25 +76,31 @@ a {
     }
 }
 
-.fServices{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    flex-wrap: wrap;
-}
+/* SERVICES SECTION */
 
-.fServ{
-    width: 256px;
-    background-color: rgba(255, 0, 0, .3);
-    text-align: center;
-}
-
-.fProjects{
+.fServices {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.fServ {
+    width: 256px;
+    background-color: rgba(203, 29, 17, .3);
+    text-align: center;
+}
+
+/* PROJECTS SECTION */
+
+.fProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* BLOG ROLL SECTION */
 
 .fBlogroll {
     display: flex;
@@ -94,12 +110,24 @@ a {
     background-color: #1c3738;
 }
 
-.fBlogpost{
-    background-color: #c0c0c0;
+.fBlogcard {
+    /*background-color: #c0c0c0;
     height: 256px;
     width: 192px;
-    margin: 10px;
+    margin: 10px;*/
+
+    display: grid;
+    grid-template-columns: 256px;
+    grid-template-rows: 128px 128px 64px;
+    grid-template-areas: "image""text""stats";
+    border-radius: 3px;
+    background: #d4af37;
+    box-shadow: 3px 3px 9px rgba(20, 20, 20, 0.5);
+    /* font-family: roboto; */
+    text-align: center;
 }
+
+/* FOOTER SECTION */
 
 .fSNS {
     display: flex;
@@ -107,13 +135,13 @@ a {
     justify-content: center;
 }
 
-.fFooternav{
+.fFooternav {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.fDisclaimer{
+.fDisclaimer {
     display: flex;
     flex-direction: row;
     justify-content: center;
