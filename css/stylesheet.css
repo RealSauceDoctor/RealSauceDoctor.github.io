@@ -85,7 +85,7 @@ a {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 120px;
-    background-color: #1c3738;
+    background-color: #d4af37;
     padding: 15px 10px;
     text-align: center;
 }
@@ -98,6 +98,10 @@ a {
     .fNav ul {
         flex-wrap: wrap;
     }
+}
+
+.fNav ul li a{
+        color: #141414;
 }
 
 /* ABOUT SECTION */
@@ -152,22 +156,23 @@ a {
     grid-template-columns: 256px;
     grid-template-rows: 192px 192px 64px;
     grid-template-areas: "image""text""stats";
-    /* border-radius: 3px;*/
+    border-radius: 4px;
     background: #d4af37;
     /* box-shadow: 3px 3px 9px rgba(20, 20, 20, 0.5);*/
     text-align: center;
 
     border-style: solid;
-    border-color: white;
-    border-width: thick;
+    border-color: #c0c0c0;
+    border-width: 8px;
+    margin: 4px;
 }
 
 .fBlogcard-image {
     grid-area: image;
-    background-color: red;
+    background-color: #cb1d11;
     background-image: url();
-    /* border-top-left-radius: 3px;
-    border-top-right-radius: 3px;*/
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     background-size: cover;
 }
 
@@ -176,15 +181,15 @@ a {
     margin: 16px;
 }
 
-.fBlogcard-text .date{
+.fBlogcard-text .date {
     font-size: 12px;
 }
 
-.fBlogcard-text p{
+.fBlogcard-text p {
     font-size: 16px;
 }
 
-.fBlogcard-text h2{
+.fBlogcard-text h2 {
     margin-top: 0px;
     font-size: 28px;
 }
@@ -195,12 +200,12 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-color: red;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #cb1d11;
 }
 
-.fBlogcard-stats .stat{
+.fBlogcard-stats .stat {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,9 +217,6 @@ a {
 /* FOOTER SECTION */
 
 .fSNS {
-    width: 360px;
-    border: 16px;
-    border-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -224,8 +226,16 @@ a {
 .fSNS-button {
     height: 64px;
     width: 64px;
-    background-color: #d4af37;
-    margin: auto;
+    background-color: #c0c0c0;
+    border-radius: 4px;
+    margin: 4px;
+    text-align: center;
+}
+
+.fSNS-button img {
+    height: 56px;
+    width: 56px;
+    margin-top: 4px;
 }
 
 .fFooternav {
