@@ -92,6 +92,8 @@ a {
 
 .fNav ul li:hover {
     background-color: #cb1d11;
+    /*color: #c0c0c0;
+    font-weight: bold;*/
 }
 
 @media (max-width:768px) {
@@ -130,12 +132,65 @@ a {
 
 /* PROJECTS SECTION */
 
+
 .fProjects {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.fProjectcard {
+    display: grid;
+    grid-template-columns: 256px;
+    grid-template-rows: 208px 208px;
+    grid-template-areas: "image""text";
+    border-radius: 4px;
+    background: #cb1d11;
+    text-align: justify;
+
+    border-style: solid;
+    border-color: #c0c0c0;
+    border-width: 8px;
+    margin: 4px;
+
+    transition: 0.5s ease:
+    cursor: pointer;
+}
+
+.fProjectcard-image {
+    grid-area: image;
+    /*background-color: #cb1d11;*/
+    background-image: url();
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-size: cover;
+    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%);
+}
+
+.fProjectcard-text {
+    grid-area: text;
+    margin: 16px;
+}
+
+.fProjectcard-text .date {
+    font-size: 12px;
+}
+
+.fProjectcard-text p {
+    font-size: 16px;
+}
+
+.fProjectcard-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.fProjectcard:hover{
+    /*transform: scale(1.2);*/
+}
+
+
 
 /* BLOG ROLL SECTION */
 
@@ -147,11 +202,6 @@ a {
 }
 
 .fBlogcard {
-    /*
-    width: 192px;
-    margin: 10px;
-    */
-
     display: grid;
     grid-template-columns: 256px;
     grid-template-rows: 192px 192px 64px;
@@ -165,6 +215,9 @@ a {
     border-color: #c0c0c0;
     border-width: 8px;
     margin: 4px;
+
+    transition: 0.5s ease:
+    cursor: pointer;
 }
 
 .fBlogcard-image {
@@ -179,6 +232,7 @@ a {
 .fBlogcard-text {
     grid-area: text;
     margin: 16px;
+    color: #141414;
 }
 
 .fBlogcard-text .date {
@@ -212,6 +266,10 @@ a {
     flex-direction: column;
 
     padding: 10px;
+}
+
+.fBlogcard:hover{
+    /*transform: scale(1.2);*/
 }
 
 /* FOOTER SECTION */
