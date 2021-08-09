@@ -45,6 +45,10 @@ a {
     color: #c0c0c0;
 }
 
+
+
+
+
 /* FOLD SECTION */
 
 #fFold {
@@ -66,6 +70,10 @@ a {
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
 }
+
+
+
+
 
 /* NAVIGATION BAR */
 
@@ -102,9 +110,13 @@ a {
     }
 }
 
-.fNav ul li a{
-        color: #141414;
+.fNav ul li a {
+    color: #141414;
 }
+
+
+
+
 
 /* ABOUT SECTION */
 
@@ -114,6 +126,10 @@ a {
     flex-wrap: wrap;
     flex-shrink: 0;
 }
+
+
+
+
 
 /* SERVICES SECTION */
 
@@ -130,8 +146,11 @@ a {
     text-align: center;
 }
 
-/* PROJECTS SECTION */
 
+
+
+
+/* PROJECTS SECTION */
 
 .fProjects {
     display: flex;
@@ -143,10 +162,11 @@ a {
 .fProjectcard {
     display: grid;
     grid-template-columns: 256px;
-    grid-template-rows: 208px 208px;
+    grid-template-rows: 256px 192px;
     grid-template-areas: "image""text";
     border-radius: 4px;
     background: #cb1d11;
+    /* box-shadow: 3px 3px 9px rgba(20, 20, 20, 0.5);*/
     text-align: justify;
 
     border-style: solid;
@@ -154,7 +174,7 @@ a {
     border-width: 8px;
     margin: 4px;
 
-    transition: 0.5s ease:
+    transition: 0.5s ease;
     cursor: pointer;
 }
 
@@ -173,7 +193,7 @@ a {
     margin: 16px;
 }
 
-.fProjectcard-text .date {
+.fProjectcard-text .kind {
     font-size: 12px;
 }
 
@@ -186,9 +206,11 @@ a {
     font-size: 28px;
 }
 
-.fProjectcard:hover{
+.fProjectcard:hover {
     /*transform: scale(1.2);*/
 }
+
+
 
 
 
@@ -216,7 +238,7 @@ a {
     border-width: 8px;
     margin: 4px;
 
-    transition: 0.5s ease:
+    transition: 0.5s ease;
     cursor: pointer;
 }
 
@@ -268,9 +290,13 @@ a {
     padding: 10px;
 }
 
-.fBlogcard:hover{
+.fBlogcard:hover {
     /*transform: scale(1.2);*/
 }
+
+
+
+
 
 /* FOOTER SECTION */
 
