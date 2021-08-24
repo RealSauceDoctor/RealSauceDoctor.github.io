@@ -17,7 +17,32 @@ html {
 360x640 min res
 1920x1080 max res
 
+@media only screen and (max-width:600px) {
+
+}
+
+@media only screen and (min-width:600px) {
+
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (min-width:992px) {
+
+}
+
+@media only screen and (min-width:1200px) {
+
+}
+
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: monospace;
@@ -25,7 +50,6 @@ body {
     background-color: #141414;
     color: #c0c0c0;
     text-rendering: optimizeLegibility;
-    margin: 0px;
 }
 
 
@@ -53,13 +77,13 @@ a {
 
 #fFold {
     position: relative;
-    background-color: #cb1d11;
+    background-color: rgba(203, 29, 17, 0.3);
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
-.fFold-video {
+/*.fFold-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,7 +93,7 @@ a {
     height: auto;
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
-}
+}*/
 
 
 
@@ -86,6 +110,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .fNav ul li {
@@ -106,7 +131,7 @@ a {
 
 @media (max-width:768px) {
     .fNav ul {
-        flex-wrap: wrap;
+
     }
 }
 
@@ -120,11 +145,25 @@ a {
 
 /* ABOUT SECTION */
 
-#fAbout div {
+.fMe {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.fMe .fProfoto {
+    width: 256px;
+    margin: 16px;
+}
+
+.fMe .fBio {
+    min-width: 256px;
+    max-width: 1024px;
+    text-align: justify;
+    line-height: 150%;
+    margin: 16px;
 }
 
 
@@ -142,8 +181,10 @@ a {
 
 .fServ {
     width: 256px;
-    background-color: rgba(203, 29, 17, .3);
+    height: 256px;
     text-align: center;
+    margin: 4px;
+    padding: 16px;
 }
 
 
@@ -328,8 +369,29 @@ a {
     justify-content: center;
 }
 
+.fFooternav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fFooternav div {
+    width: 256px;
+    margin: 4px;
+    padding: 16px;
+    line-height: 150%;
+}
+
+.fFooternav div ul li {
+    list-style-type: none;
+}
+
+
 .fDisclaimer {
+    margin: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
