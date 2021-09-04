@@ -46,7 +46,7 @@ html {
 
 body {
     font-family: monospace;
-    font-size: 12pt;
+    font-size: 1em;
     background-color: #141414;
     color: #c0c0c0;
     text-rendering: optimizeLegibility;
@@ -54,19 +54,27 @@ body {
 
 
 h1 {
-    font-size: 72pt;
+    font-size: 8em;
     text-align: center;
 }
 
 h2 {
-    font-size: 24pt;
-    padding-left: 12pt;
+    font-size: 4em;
     text-transform: uppercase;
+    padding-left: 0.5em;
+}
+
+h3 {
+    font-size: 2em;
 }
 
 a {
     text-decoration: none;
     color: #c0c0c0;
+}
+
+p {
+    line-height: 120%;
 }
 
 
@@ -125,20 +133,11 @@ a {
 
 .fNav ul li:hover {
     background-color: #cb1d11;
-    /*color: #c0c0c0;
-    font-weight: bold;*/
-}
-
-@media (max-width:768px) {
-    .fNav ul {
-
-    }
 }
 
 .fNav ul li a {
     color: #141414;
 }
-
 
 
 
@@ -162,7 +161,6 @@ a {
     min-width: 256px;
     max-width: 1024px;
     text-align: justify;
-    line-height: 150%;
     margin: 16px;
 }
 
@@ -187,6 +185,10 @@ a {
     padding: 16px;
 }
 
+.fServ img{
+    height: 128px;
+}
+
 
 
 
@@ -207,7 +209,6 @@ a {
     grid-template-areas: "image""text";
     border-radius: 4px;
     background: #cb1d11;
-    /* box-shadow: 3px 3px 9px rgba(20, 20, 20, 0.5);*/
     text-align: justify;
 
     border-style: solid;
@@ -221,12 +222,11 @@ a {
 
 .fProjectcard-image {
     grid-area: image;
-    /*background-color: #cb1d11;*/
-    background-image: url();
+    background-color: #cb1d11;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     background-size: cover;
-    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%);
+    background: linear-gradient(#fff0 0%, #fff0 70%, #cb1d11 100%), url(../images/itisme_web256.jpg);
 }
 
 .fProjectcard-text {
@@ -245,10 +245,21 @@ a {
 .fProjectcard-text h2 {
     margin-top: 0px;
     font-size: 28px;
+    padding-left: 0em;
 }
 
 .fProjectcard:hover {
     /*transform: scale(1.2);*/
+}
+
+
+
+
+
+/* CONTACT SECTION */
+
+#fContact p{
+    margin: 16px;
 }
 
 
@@ -271,7 +282,6 @@ a {
     grid-template-areas: "image""text""stats";
     border-radius: 4px;
     background: #d4af37;
-    /* box-shadow: 3px 3px 9px rgba(20, 20, 20, 0.5);*/
     text-align: center;
 
     border-style: solid;
@@ -286,7 +296,7 @@ a {
 .fBlogcard-image {
     grid-area: image;
     background-color: #cb1d11;
-    background-image: url();
+    background-image: url(../images/itisme_web256.jpg);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     background-size: cover;
@@ -309,6 +319,7 @@ a {
 .fBlogcard-text h2 {
     margin-top: 0px;
     font-size: 28px;
+    padding-left: 0em;
 }
 
 .fBlogcard-stats {
@@ -369,7 +380,7 @@ a {
     justify-content: center;
 }
 
-.fFooternav{
+.fFooternav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -379,7 +390,7 @@ a {
     width: 256px;
     margin: 4px;
     padding: 16px;
-    line-height: 150%;
+    line-height: 200%;
 }
 
 .fFooternav div ul li {
