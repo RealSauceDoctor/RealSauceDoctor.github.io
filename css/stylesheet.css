@@ -1,14 +1,19 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Bungee&family=Roboto+Mono&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 /* main colors
 
-"#cb1d11" or "rgb(203, 29, 17)"
-"#d4af37" or "rgb(212, 175, 55)"
-"#141414" or "rgb(20, 20, 20)"
-"#1c3738" or "rgb(28, 55, 56)"
-"#c0c0c0" or "rgb(192, 192, 192)"
+"#660000" or "rgb(102, 0, 0)": Blood Red
+"#D4AF37" or "rgb(212, 175, 55)": Gold Metallic
+"#CBA135" or "rgb(203, 161, 53)": Satin Sheen Gold
+"#1C1C1C" or "rgb(28, 28, 28)": Eerie Black
+"#36454F" or "rgb(54, 69, 79)": Charcoal
+"#c0c0c0" or "rgb(192, 192, 192)": Silver
+"#ACACAC" or "rgb(172, 172, 172)": Silver Chalice
 
 */
 
@@ -42,18 +47,23 @@ html {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 1em;
-    background-color: #141414;
+    background-color: #1C1C1C;
     color: #c0c0c0;
     text-rendering: optimizeLegibility;
 }
 
+h2, h3{
+    font-family: 'Aldrich', sans-serif;
+}
 
 h1 {
+    font-family: 'Bungee', cursive;
     font-size: 8em;
     text-align: center;
 }
@@ -74,7 +84,7 @@ a {
 }
 
 p {
-    line-height: 120%;
+    line-height: 1.2em;
 }
 
 
@@ -85,7 +95,7 @@ p {
 
 #fFold {
     position: relative;
-    background-color: rgba(203, 29, 17, 0.3);
+    background-color: #660000;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -109,9 +119,35 @@ p {
 
 /* NAVIGATION BAR */
 
+.button{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #CBA135;
+    border: 0;
+    color: #1C1C1C;
+    width: 120px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #660000;
+    color: #C0C0C0;
+}
+
+.fNav div .button:nth-child(6){
+    width: 50px;
+    background-color: blue;
+}
+
 .fNav {
     position: sticky;
     top: 0;
+    text-align: center;
 }
 
 .fNav ul {
@@ -123,20 +159,28 @@ p {
 
 .fNav ul li {
     list-style-type: none;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 120px;
-    background-color: #d4af37;
+    /*flex-grow: 0;
+    flex-shrink: 0;*/
+    flex-basis: 100px;
+    background-color: #CBA135;
     padding: 15px 10px;
     text-align: center;
 }
 
+.fNav ul li:last-child {
+    flex-basis: 60px;
+}
+
 .fNav ul li:hover {
-    background-color: #cb1d11;
+    background-color: #660000;
 }
 
 .fNav ul li a {
-    color: #141414;
+    color: #1C1C1C;
+}
+
+.fNav ul li a:hover {
+    color: #C0C0C0;
 }
 
 
@@ -170,6 +214,10 @@ p {
 
 /* SERVICES SECTION */
 
+#fServices {
+    background-color: #36454F;
+}
+
 .fServices {
     display: flex;
     flex-direction: row;
@@ -185,7 +233,7 @@ p {
     padding: 16px;
 }
 
-.fServ img{
+.fServ img {
     height: 128px;
 }
 
@@ -208,7 +256,7 @@ p {
     grid-template-rows: 256px 192px;
     grid-template-areas: "image""text";
     border-radius: 4px;
-    background: #cb1d11;
+    background: #660000;
     text-align: justify;
 
     border-style: solid;
@@ -222,11 +270,11 @@ p {
 
 .fProjectcard-image {
     grid-area: image;
-    background-color: #cb1d11;
+    background-color: #660000;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     background-size: cover;
-    background: linear-gradient(#fff0 0%, #fff0 70%, #cb1d11 100%), url(../images/itisme_web256.jpg);
+    background: linear-gradient(#fff0 0%, #fff0 70%, #660000 100%), url(../images/itisme_web256.jpg);
 }
 
 .fProjectcard-text {
@@ -258,7 +306,11 @@ p {
 
 /* CONTACT SECTION */
 
-#fContact p{
+#fContact {
+    background-color: #36454F;
+}
+
+#fContact p {
     margin: 16px;
 }
 
@@ -281,7 +333,7 @@ p {
     grid-template-rows: 192px 192px 64px;
     grid-template-areas: "image""text""stats";
     border-radius: 4px;
-    background: #d4af37;
+    background: #CBA135;
     text-align: center;
 
     border-style: solid;
@@ -295,7 +347,7 @@ p {
 
 .fBlogcard-image {
     grid-area: image;
-    background-color: #cb1d11;
+    background-color: #660000;
     background-image: url(../images/itisme_web256.jpg);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -305,7 +357,7 @@ p {
 .fBlogcard-text {
     grid-area: text;
     margin: 16px;
-    color: #141414;
+    color: #1C1C1C;
 }
 
 .fBlogcard-text .date {
@@ -330,7 +382,7 @@ p {
 
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    background-color: #cb1d11;
+    background-color: #660000;
 }
 
 .fBlogcard-stats .stat {
@@ -352,6 +404,10 @@ p {
 
 /* FOOTER SECTION */
 
+.footer {
+    background-color: #36454F;
+}
+
 .fSNS {
     display: flex;
     flex-direction: row;
@@ -362,7 +418,7 @@ p {
 .fSNS-button {
     height: 64px;
     width: 64px;
-    background-color: #c0c0c0;
+    background-color: #ACACAC;
     border-radius: 4px;
     margin: 4px;
     text-align: center;
