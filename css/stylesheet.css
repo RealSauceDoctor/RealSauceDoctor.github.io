@@ -139,9 +139,24 @@ p {
     color: #C0C0C0;
 }
 
-.fNav div .button:nth-child(6){
+.button-top{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #CBA135;
+    border: 0;
+    color: #1C1C1C;
     width: 50px;
-    background-color: blue;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-top:hover{
+    background-color: #660000;
+    color: #C0C0C0;
 }
 
 .fNav {

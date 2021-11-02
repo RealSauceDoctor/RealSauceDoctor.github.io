@@ -1,49 +1,43 @@
-import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js';
+//creating the scene
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); //(FOV, aspect ratio, near clipping, far clippling)
 
-function main () {
-    const canvas = document.querySelector('#blender');
-    const renderer = new THREE.WebGLRenderer({canvas});
+//creating the renderer
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-    const fov = 75;
-    const aspect = 2;
-    const near = 0.1;
-    const far = 5;
-    const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    camera.position.z = 2;
 
-    const scene = new THREE.Scene();
+//creating the objects
 
-    {
-        const color = 0xFFFFFF;
-        const intensity = 1;
-        const light = new THREE.DirectionalLight(color, intensity);
-        light.position.set(-1, 2, 4);
-        scene.add(light);
-    }
+    //const loader = new GLTFLoader();
+    //loader.load('models/monkey.glb', function(gltf) {
+    //    scene.add(gltf.scene);
+    //}, undefined, function(error) {
+    //    console.error(error);
+    //});
 
-    const boxWidth = 1;
-    const boxHeight = 1;
-    const boxDepth = 1;
-    const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
+const geometry = new THREE.BoxGeometry(); //creating the geometry
+const material = new THREE.MeshBasicMaterial({
+    color: 0x660000
+}); //creating the material
+const cube = new THREE.Mesh(geometry, material); //creating the mesh
+scene.add(cube); //adding mesh to scene
 
-    const material = new THREE.MeshPhongMaterial({color: 0x660000});
+//gizmo
+const gizmo = new THREE.AxesHelper(2);
+scene.add(gizmo); //x=red, y=green, z=blue
 
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+//camera.position.z = 5;
+camera.position.set(0, 2, 5);//XYZ
+camera.lookAt(cube.position);
 
-    //renderer.render(scene, camera);
+function animate(time) {
+    time *= 0.001;
 
-    function render (time) {
-        time *= 0.001;
+    cube.rotation.x=time;
 
-        cube.rotation.x = time;
-        //cube.rotation.y = time;
-
-        renderer.render(scene, camera);
-        requestAnimationFrame(render);
-    }
-
-    requestAnimationFrame(render);
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
 }
-
-main();
+animate();
