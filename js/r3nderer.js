@@ -1,3 +1,16 @@
+//cursor
+const cursorStart = {
+    x: 0,
+    y: 0
+}
+
+const aspectRatio = (window.innerWidth / window.innerHeight);
+
+window.addEventListener('mousemove', (mouseEvent) => {
+    cursorStart.x = mouseEvent.clientX / window.innerWidth - 0.5;
+    cursorStart.y = mouseEvent.clientY / window.innerHeight - 0.5;
+})
+
 //creating the scene
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); //(FOV, aspect ratio, near clipping, far clippling)
@@ -27,15 +40,18 @@ lamp1.position.set(1, 2, 0);
 scene.add(lamp1);
 
 //camera
-camera.position.set(0, 2, 5); //XYZ
-camera.lookAt(cube.position);
+camera.position.set(0, 0, 5); //XYZ
+//camera.lookAt(cube.position);
 
 //rendering
 function animate(time) {
     time *= 0.001;
 
     cube.rotation.set(time, time, time);
-    cube.position.set(Math.cos(time), Math.sin(time), Math.cos(time / 2))
+    cube.position.set(Math.cos(time), Math.sin(time), Math.cos(time / 2));
+
+    camera.rotation.y = cursorStart.x / 2;
+    camera.rotation.x = cursorStart.y / 2;
 
     requestAnimationFrame(animate);
     renderer.render(scene, camera);

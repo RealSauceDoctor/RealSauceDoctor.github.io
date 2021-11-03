@@ -8,11 +8,11 @@ html {
 /* main colors
 
 "#660000" or "rgb(102, 0, 0)": Blood Red
-"#D4AF37" or "rgb(212, 175, 55)": Gold Metallic
++++"#D4AF37" or "rgb(212, 175, 55)": Gold Metallic
 "#CBA135" or "rgb(203, 161, 53)": Satin Sheen Gold
 "#1C1C1C" or "rgb(28, 28, 28)": Eerie Black
 "#36454F" or "rgb(54, 69, 79)": Charcoal
-"#c0c0c0" or "rgb(192, 192, 192)": Silver
++++"#c0c0c0" or "rgb(192, 192, 192)": Silver
 "#ACACAC" or "rgb(172, 172, 172)": Silver Chalice
 
 */
@@ -66,6 +66,7 @@ h1 {
     font-family: 'Bungee', cursive;
     font-size: 8em;
     text-align: center;
+    line-height: 0.85em;
 }
 
 h2 {
@@ -80,7 +81,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #c0c0c0;
+    color: #CBA135;
 }
 
 p {
@@ -112,8 +113,6 @@ p {
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
 }*/
-
-
 
 
 
