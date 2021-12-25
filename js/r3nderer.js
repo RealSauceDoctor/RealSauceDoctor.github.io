@@ -13,7 +13,7 @@ window.addEventListener('mousemove', (mouseEvent) => {
 
 //creating the scene
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); //(FOV, aspect ratio, near clipping, far clippling)
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000); //(FOV, aspect ratio, near clipping, far clippling)
 
 //creating the renderer
 const renderer = new THREE.WebGLRenderer();
@@ -40,8 +40,13 @@ lamp1.position.set(1, 2, 0);
 scene.add(lamp1);
 
 //camera
-camera.position.set(0, 0, 5); //XYZ
-//camera.lookAt(cube.position);
+camera.position.set(0, 2, 10); //XYZ
+
+
+//camera controls
+//const controls = new OrbitControls(camera, renderer, domElement);
+//controls.target.x = 10;
+//controls.update();
 
 //rendering
 function animate(time) {
@@ -50,10 +55,16 @@ function animate(time) {
     cube.rotation.set(time, time, time);
     cube.position.set(Math.cos(time), Math.sin(time), Math.cos(time / 2));
 
-    camera.rotation.y = cursorStart.x / 2;
-    camera.rotation.x = cursorStart.y / 2;
+    camera.lookAt(cube.position);
+    //camera.position.y = (cursorStart.y*5)+2;
+    //camera.position.x = Math.sin(cursorStart.x * Math.PI * 2) * 5;
+    //camera.position.z = Math.cos(cursorStart.x * Math.PI * 2) * 5;
 
     requestAnimationFrame(animate);
+
+    //controls.enableDamping = true;
+    //controls.update();
+
     renderer.render(scene, camera);
 }
 animate();
