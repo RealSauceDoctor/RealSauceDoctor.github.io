@@ -28,84 +28,83 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
 
-            grid-template-areas:    "pic info"
-                                    "sns contact";
+            grid-template-areas: "pic info"
+                "sns contact";
 
         }
 
-        .container > div {
+        .container>div {
             padding: 1em;
         }
 
-        .container .pic{
+        .container .pic {
             grid-area: pic;
-            height:160px;
+            height: 160px;
             width: 360px;
-            display:flex;
-            flex-wrap:nowrap;
+            display: flex;
+            flex-wrap: nowrap;
             align-items: center;
-background-color: red;
+            background-color: red;
         }
 
-        .container .info{
+        .container .info {
             grid-area: info;
-            display:flex;
-            flex-wrap:nowrap;
+            display: flex;
+            flex-wrap: nowrap;
             align-items: center;
             background-color: green;
         }
 
-        .container .sns{
+        .container .sns {
             grid-area: sns;
-            display:flex;
+            display: flex;
             align-items: center;
             background-color: blue;
         }
 
-        .container .contact{
+        .container .contact {
             grid-area: contact;
-            display:flex;
+            display: flex;
             align-items: center;
             background-color: purple;
         }
 
         @media only screen and (max-width:768px) {
-.container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:    "pic"
-                            "info"
-                            "sns"
-                            "contact";
-}
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas: "pic"
+                    "info"
+                    "sns"
+                    "contact";
+            }
         }
-
     </style>
 </head>
 
 <body>
     <div class="container">
 
-            <div class="pic">
-                <img src="" alt="">
-            </div>
-            <div class="info">
-                <h1>Ivan Saucedo</h1>
-                <h2>Digital Creator</h2>
-                <h3>Creative/Art Director | itzcuintli & Abstract</h3>
-            </div>
-            <div class="sns">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="contact">
-                <p>+52 443 133 1195</p>
-                <p>itzcuintlida@gmail.com</p>
-                <p></p>
-                <p>Morelia, Mich., Mexico.</p>
-            </div>
+        <div class="pic">
+            <img src="" alt="">
+        </div>
+        <div class="info">
+            <h1>Ivan Saucedo</h1>
+            <h2>Digital Creator</h2>
+            <h3>Creative/Art Director | itzcuintli & Abstract</h3>
+        </div>
+        <div class="sns">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="contact">
+            <p>+52 443 133 1195</p>
+            <p>itzcuintlida@gmail.com</p>
+            <p></p>
+            <p>Morelia, Mich., Mexico.</p>
+        </div>
 
     </div>
 </body>
