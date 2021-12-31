@@ -124,13 +124,18 @@ p {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    list-style-type: none;
 }
 
 .fNav ul li {
     color: #1c1c1c;
-    height: 10vw;
-    width: 10vw;
+    height: 64px;
+    width: 264px;
     cursor: pointer;
+    text-align:justify;
+    font-size: 2em;
+    padding-left: .5em;
+    padding-top: .25em;
 }
 
 .fNav ul li:hover {
@@ -143,6 +148,8 @@ p {
 
 #fFold {
     background-color: #600;
+    white-space: pre-wrap;
+    /*word-break: break-all;*/
 }
 
 /* ABOUT SECTION */
@@ -164,6 +171,8 @@ p {
     max-width: 1024px;
     margin: 16px;
     text-align: justify;
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 
 /* SERVICES SECTION */
@@ -177,6 +186,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    white-space: normal;
 }
 
 .fServ {
@@ -228,6 +238,8 @@ p {
 .fProjectcard-text {
     margin: 16px;
     grid-area: text;
+    white-space: normal;
+    text-overflow: ellipsis;
 }
 
 .fProjectcard-text .kind {
@@ -296,6 +308,8 @@ p {
     margin: 16px;
     color: #1c1c1c;
     grid-area: text;
+    white-space: normal;
+    text-overflow: ellipsis;
 }
 
 .fBlogcard-text .date {
