@@ -1,1 +1,0 @@
-$(".fContent").scrollLeft(200);
