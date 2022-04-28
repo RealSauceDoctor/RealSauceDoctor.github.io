@@ -22,27 +22,36 @@ html {
 360x640 min res
 1920x1080 max res
 
-@media only screen and (max-width:600px) {
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    ...
 }
 
-@media only screen and (min-width:600px) {
-
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    ...
 }
 
-@media only screen and (min-width:768px) {
-
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    ...
 }
 
-@media only screen and (min-width:992px) {
-
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    ...
 }
 
-@media only screen and (min-width:1200px) {
-
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    ...
 }
 
 */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -53,12 +62,13 @@ html {
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;
-    color: #c0c0c0;
+    color: #ACACAC;
     background-color: #1c1c1c;
     text-rendering: optimizeLegibility;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Aldrich', sans-serif;
 }
 
@@ -81,13 +91,13 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #cba135;
+    color: #CBA135;
 }
 
 p {
     line-height: 1.2em;
 }
 
-.temp{
+.temp {
     margin-top: 35vh;
 }
