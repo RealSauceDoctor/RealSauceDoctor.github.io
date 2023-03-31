@@ -1,0 +1,29 @@
+@font-face {
+    font-family: CalamityR;
+    src: url(misc/Calamity_Regular.woff2);
+}
+
+@font-face {
+    font-family: CalamityO;
+    src: url(misc/Calamity_Outline.woff2);
+}
+
+@font-face {
+    font-family: Bungee;
+    src: url(misc/Bungee_Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: CalamityR;
+}
