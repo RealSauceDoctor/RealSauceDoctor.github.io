@@ -5,7 +5,7 @@ const pages = [
     {copy: "a storyteller", background: "red", logo: "blue"},
     {copy: "a dreamer", background: "blue", logo: "green"},
     {copy: "a creator", background: "green", logo: "white"},
-    {copy: "an alquemist", background: "white", logo: "black"},
+    {copy: "an alque&shy;mist", background: "white", logo: "black"},
     {copy: "a worldbuilder", background: "black", logo: "orange"},
     {copy: "a designer", background: "orange", logo: "yellow"},
     {copy: "a ruler", background: "yellow", logo: "red"}

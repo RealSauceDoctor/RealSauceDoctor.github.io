@@ -20,14 +20,10 @@ body {
     width: 640px;*/
 }
 
-h1 {
-    font-size: 24px;
-}
-
 nav {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -240px;
     width: 240px;
     height: 100vh;
     background-color: #660000;
@@ -38,6 +34,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    transition: left 0.5s;
+
+    z-index: 2;
+}
+
+nav.open {
+    left: 0;
 }
 
 nav a {
@@ -51,4 +55,61 @@ main {
     z-index: 1;
     background-color: #36454F;
     min-height: 100vh;
+    transition: transform 0.5s;
+}
+
+a.toggle-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    color: #CBA135;
+    text-decoration: none;
+
+    z-index: 3;
+}
+
+a.toggle-nav img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+}
+
+section div {
+    width: 360px;
+}
+
+section div.content {
+    margin-left: 32px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1;
+}
+
+p {
+    line-height: 1.5;
+    margin: 24px 0;
+}
+
+a.button {
+    display: inline-block;
+    background-color: #660000;
+    color: #acacac;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5%;
+}
+
+a.button:hover {
+    color: #1c1c1c;
+    background-color: #CBA135;
+    transition: 0.5s;
 }
