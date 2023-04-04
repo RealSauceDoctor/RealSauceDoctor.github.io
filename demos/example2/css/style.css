@@ -1,3 +1,13 @@
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -112,4 +122,19 @@ a.button:hover {
     color: #1c1c1c;
     background-color: #CBA135;
     transition: 0.5s;
+}
+
+div.slide {
+    height: 512px;
+    position: relative;
+}
+
+div.slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.slide img:first-child {
+    z-index: 1;
 }
