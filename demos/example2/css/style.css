@@ -66,6 +66,7 @@ main {
     background-color: #36454F;
     min-height: 100vh;
     transition: transform 0.5s;
+    overflow: hidden;
 }
 
 a.toggle-nav {
@@ -88,7 +89,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 360px;
+    height: 100vh;
 }
 
 section div {
@@ -133,8 +134,14 @@ div.slide img {
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.5s, box-shadow 0.5s;
+    border-radius: 16px;
 }
 
 div.slide img:first-child {
     z-index: 1;
+}
+
+div.slide:hover img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
