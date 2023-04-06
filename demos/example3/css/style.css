@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ACACAC;
+    background-color: #1c1c1c;
+    text-rendering: optimizeLegibility;
+    margin: 64px 64px 64px 304px;
+}
+
+section.options {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: #660000;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+
+    padding: 48px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+div.option {
+    margin: 8px 0 0 0;
+}
+
+label {
+    display: block;
+    margin: 0 0 8px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    background-color: #ACACAC;
+    color: #660000;
+    padding: 4px 8px;
+}
