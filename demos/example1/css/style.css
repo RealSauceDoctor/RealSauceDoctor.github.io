@@ -1,17 +1,17 @@
 @font-face {
     font-family: CalamityR;
     /*El url es relativo a la locacion de la hoja css*/
-    src: url(Calamity_Regular.woff2);
+    src: url(../fonts/Calamity_Regular.woff2);
 }
 
 @font-face {
     font-family: CalamityO;
-    src: url(Calamity_Outline.woff2);
+    src: url(../fonts/Calamity_Outline.woff2);
 }
 
 @font-face {
     font-family: Bungee;
-    src: url(Bungee_Regular.ttf);
+    src: url(../fonts/Bungee_Regular.ttf);
 }
 
 html {
@@ -58,7 +58,7 @@ section {
     hyphens: auto;
 }
 
-section div.logo {
+.logo {
     width: 64px;
     height: 64px;
     background-color: #660000;
