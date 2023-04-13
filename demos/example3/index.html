@@ -13,15 +13,31 @@
 
 <body>
     <section class="options">
-        <h1>asdfghjkl</h1>
+        <h1>Type Checker</h1>
         <div class="option">
             <label for="">Your text</label>
             <input type="text" name="sentence" placeholder="The quick brown fox...">
         </div>
+
+        <div class="option">
+            <label for="">Type size <span class="typesize-output">64px</span></label>
+            <input type="range" name="typesize" min="12" max="200" value="64">
+        </div>
+
+        <div class="option">
+            <label for="">Font weight <span class="fontweight">100</span></label>
+            <input type="range" name="fontweight" min="100" max="900" value="500">
+        </div>
+
+        <div class="option">
+            <label for="">Leading <span class="leading-output">1.75</span></label>
+            <input type="range" name="leading" min="0.5" max="5" value="1.75">
+        </div>
     </section>
-    <section class="output">
-        The quick brown fox jumps over the lazy fog
-    </section>
+
+    <textarea class="output">The quick brown fox jumps over the lazy fog</textarea>
+
+    <script src="js/typechecker.js"></script>
 </body>
 
 </html>

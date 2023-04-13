@@ -37,7 +37,7 @@ h1 {
 }
 
 div.option {
-    margin: 8px 0 0 0;
+    margin: 24px 0 0 0;
 }
 
 label {
@@ -45,9 +45,30 @@ label {
     margin: 0 0 8px 0;
 }
 
+label span {
+    float: right;
+    font-style: italic;
+}
+
 input[type="text"] {
     width: 100%;
     background-color: #ACACAC;
     color: #660000;
     padding: 4px 8px;
+}
+
+input[type="range"] {
+    width: 100%;
+
+}
+
+textarea.output {
+    font-size: 64px;
+    width: 100%;
+    background: none;
+    color: #ACACAC;
+    border: none;
+    outline: none;
+    min-height: 100vh;
+
 }
