@@ -16,14 +16,14 @@ body {
     color: #ACACAC;
     background-color: #1c1c1c;
     text-rendering: optimizeLegibility;
-    margin: 0 0 0 240px;
+    margin: 0 0 0 320px;
 }
 
 section.options {
     position: fixed;
     top: 0;
     left: 0;
-    width: 240px;
+    width: 320px;
     height: 100vh;
     background-color: #660000;
     border-right: 2px solid rgba(255, 255, 255, 0.5);
