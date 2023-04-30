@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #36454f;
+    color: #1c1c1c;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+}
+
+.header h1 {
+
+    font-size: 2rem;
+    padding: 2rem;
+    color: #cba135;
+}
+
+.card-container {
+    margin: 2rem;
+    /*display: grid;
+    justify-items: center;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));*/
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.card {
+    display: grid;
+    margin: 8px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #660000;
+    border-radius: 8px;
+    grid-template-columns: 256px;
+    grid-template-rows: 256px 4rem 96px 32px;
+    grid-template-areas: "image" "title" "description" "link";
+    text-align: justify;
+    background-color: #acacac;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    grid-area: image;
+    border-radius: 4px 4px 0 0;
+    background-color: #600;
+    overflow: hidden;
+}
+
+.card-title {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    grid-area: title;
+    text-align: center;
+}
+
+.card-desc {
+    grid-area: description;
+
+    margin: 16px;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+.card-button {
+    grid-area: link;
+}
+
+a.card-button {
+    display: inline-block;
+    background-color: #1c1c1c;
+    color: #acacac;
+    text-decoration: none;
+    padding: 0.5em 0;
+    text-align: center;
+}
