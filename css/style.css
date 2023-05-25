@@ -11,9 +11,22 @@ html {
 
 body {
     background-color: #36454f;
-    color: #1c1c1c;
+    color: #acacac;
     text-align: center;
     font-family: sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+blockquote {
+    margin-top: 32px;
+}
+
+.float {
+    position: absolute;
+    font-size: .75rem;
 }
 
 .header {
@@ -29,13 +42,47 @@ body {
     color: #cba135;
 }
 
-.card-container {
-    margin: 2rem;
-    /*display: grid;
-    justify-items: center;
-    gap: 16px;
-    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));*/
+section {
+    background-color: #1c1c1c;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 1rem;
+}
 
+.intro-header {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.me a {
+    text-decoration: none;
+    color: #cba135;
+}
+
+.intro-background {
+    padding: 2rem 0;
+}
+
+.intro-background p {
+    padding: 0 4rem;
+}
+
+.about-item {
+    margin: 64px 0;
+}
+
+.pillars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 64px 0;
+}
+
+.pillar {
+    width: 192px;
+}
+
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,6 +115,7 @@ div.card {
     font-size: 1.2rem;
     grid-area: title;
     text-align: center;
+    color: #1c1c1c;
 }
 
 .card-desc {
@@ -76,6 +124,7 @@ div.card {
     margin: 16px;
     white-space: normal;
     text-overflow: ellipsis;
+    color: #1c1c1c;
 }
 
 .card-button {
@@ -89,4 +138,49 @@ a.card-button {
     text-decoration: none;
     padding: 0.5em 0;
     text-align: center;
+
+    transition: color 0.5s ease-in-out,
+        background-color 0.5s ease-in-out;
+}
+
+a.card-button:hover {
+    background-color: #cba135;
+    color: #1c1c1c;
+}
+
+.softntools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.software {
+    width: 256px;
+    margin: 32px 16px;
+}
+
+.software img {
+    margin: 16px;
+}
+
+.trophies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.trophy {
+    width: 256px;
+    margin: 32px 16px;
+}
+
+.gic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact {
+    margin: 16px;
 }
