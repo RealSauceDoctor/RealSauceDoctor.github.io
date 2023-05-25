@@ -71,6 +71,47 @@ section {
     margin: 64px 0;
 }
 
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 64px 0;
+}
+
+.skill {
+    width: 192px;
+    margin: 32px;
+}
+
+.skill h4 {
+    margin-top: 16px;
+    font-size: 1.2rem;
+}
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exp {
+    margin: 32px;
+    width: 192px;
+}
+
+.exp h4 {
+    margin-top: 16px;
+    font-size: 1.2rem;
+}
+
+.exp cite {
+    font-size: 0.8rem;
+}
+
+.exp p {
+    margin: 16px 0;
+}
+
 .pillars {
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +121,11 @@ section {
 
 .pillar {
     width: 192px;
+}
+
+.pillar h4 {
+    margin: 16px 0;
+    font-size: 1.2rem;
 }
 
 .card-container {
