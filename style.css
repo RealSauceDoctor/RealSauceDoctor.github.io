@@ -1,0 +1,24 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101010 ;
+    color: #acacac;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.temp {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+button {
+    width: 256px;
+    height: 128px;
+    color: #acacac;
+    font-size: 2em;
+    font-weight: bolder;
+    background: #a70000;
+}
